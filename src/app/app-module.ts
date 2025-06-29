@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Header } from './header/header';
+import { Navbar } from './navbar/navbar';
 
 @NgModule({
   declarations: [
     App,
-    Header
+    Header,
+    Navbar
   ],
   imports: [
     BrowserAnimationsModule,
