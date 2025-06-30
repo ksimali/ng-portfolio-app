@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: 'home', component: Home},
   {path: 'portfolio', component: Portfolio},
   {path: 'resume', component: Resume},
-  {path: 'contact', component: Contact}
+  {path: 'contact', component: Contact},
+  {path: '**', component: Home, pathMatch: 'full'} // path by default if route unknown
 ];
 
 @NgModule({
