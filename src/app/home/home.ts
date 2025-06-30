@@ -10,6 +10,6 @@ import {Title} from '@angular/platform-browser'
 export class Home {
 
   constructor(private titleService: Title) {
-    this.titleService.setTitle('Cassim - Home');
+    this.titleService.setTitle('Cassim Ali - Home');
   }
 }
