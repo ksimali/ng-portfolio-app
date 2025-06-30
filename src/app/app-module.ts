@@ -6,12 +6,20 @@ import { App } from './app';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Header } from './header/header';
 import { Navbar } from './navbar/navbar';
+import { Home } from './home/home';
+import { Portfolio } from './portfolio/portfolio';
+import { Resume } from './resume/resume';
+import { Contact } from './contact/contact';
 
 @NgModule({
   declarations: [
     App,
     Header,
-    Navbar
+    Navbar,
+    Home,
+    Portfolio,
+    Resume,
+    Contact
   ],
   imports: [
     BrowserAnimationsModule,
