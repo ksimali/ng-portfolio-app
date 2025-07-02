@@ -10,6 +10,7 @@ import { Home } from './home/home';
 import { Portfolio } from './portfolio/portfolio';
 import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
+import { ProjectCard } from './project-card/project-card';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Contact } from './contact/contact';
     Home,
     Portfolio,
     Resume,
-    Contact
+    Contact,
+    ProjectCard
   ],
   imports: [
     BrowserAnimationsModule,
