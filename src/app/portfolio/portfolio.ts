@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Project } from '../_models/Project';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,6 +9,16 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './portfolio.scss'
 })
 export class Portfolio {
+
+  project: Project = {
+    id: 0,
+    name: 'Sample Angular App',
+    summary: 'Test Description',
+    description: '',
+    projectLink: '',
+    tags: ['Angular', 'TypeScript'],
+    pictures: []
+  };
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Cassim Ali - Portfolio');
