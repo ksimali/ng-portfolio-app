@@ -11,6 +11,7 @@ import { Portfolio } from './portfolio/portfolio';
 import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
 import { ProjectCard } from './project-card/project-card';
+import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,12 @@ import { ProjectCard } from './project-card/project-card';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModalModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    BsModalService
   ],
   bootstrap: [App]
 })
