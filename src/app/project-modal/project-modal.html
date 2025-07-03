@@ -5,8 +5,8 @@
 
 <div class="modal-body">
     <carousel>
-        <slide><img src="../../assets/image1.png" alt="slide" style="display: block; width:100%"></slide>
-        <slide><img src="../../assets/image2.png" alt="slide" style="display: block; width:100%"></slide>
-        <slide><img src="../../assets/image3.png" alt="slide" style="display: block; width:100%"></slide>
+        <div *ngFor="let picture of project.pictures">
+            <slide><img src="picture" alt="slide" style="display: block; width:100%"></slide>
+        </div>
     </carousel>
 </div>
