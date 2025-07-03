@@ -13,6 +13,7 @@ import { Contact } from './contact/contact';
 import { ProjectCard } from './project-card/project-card';
 import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModal } from './project-modal/project-modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectModal } from './project-modal/project-modal';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    ModalModule
+    ModalModule,
+    CarouselModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
