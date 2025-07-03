@@ -22,7 +22,11 @@ export class ProjectCard {
   //Method that will handle opening the modal
   openProjectModal() {
     const modalOptions: ModalOptions = {
-      class: "modal-lg"
+      class: "modal-lg",
+      //take the project input for our project-card component and pass it into the modal 
+      initialState: {
+        project: this.project
+      }
     }
     this.bsModalRef = this.modalService.show(ProjectModal, modalOptions);
   }
