@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../_models/Project';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { ProjectModal } from '../project-modal/project-modal';
 
 @Component({
@@ -21,7 +21,10 @@ export class ProjectCard {
 
   //Method that will handle opening the modal
   openProjectModal() {
-    this.bsModalRef = this.modalService.show(ProjectModal);
+    const modalOptions: ModalOptions = {
+      class: "modal-lg"
+    }
+    this.bsModalRef = this.modalService.show(ProjectModal, modalOptions);
   }
 
 }
