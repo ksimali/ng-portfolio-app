@@ -14,6 +14,8 @@ import { ProjectCard } from './project-card/project-card';
 import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModal } from './project-modal/project-modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserModule,
     AppRoutingModule,
     ModalModule,
-    CarouselModule
+    CarouselModule,
+    CollapseModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
