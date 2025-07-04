@@ -20,6 +20,13 @@ export class Portfolio implements OnInit {
   //Define a typescript boolean  set to false
   typescript: boolean = false;
   angular: boolean = false;
+  javascript: boolean = false;
+  python: boolean = false;
+  csharp: boolean = false;
+  java: boolean = false;
+  nodejs: boolean = false;
+  aspnet: boolean = false;
+  react: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectService) {
     this.titleService.setTitle('Cassim Ali - Portfolio');
@@ -41,6 +48,27 @@ export class Portfolio implements OnInit {
     }
     if(this.angular) {
       filterTags.push(Tag.ANGULAR);
+    }
+    if(this.python) {
+      filterTags.push(Tag.PYTHON);
+    }
+    if(this.csharp) {
+      filterTags.push(Tag.CSHARP);
+    }
+    if(this.java) {
+      filterTags.push(Tag.JAVA);
+    }
+    if(this.nodejs) {
+      filterTags.push(Tag.NODEJS);
+    }
+    if(this.aspnet) {
+      filterTags.push(Tag.ASPNET);
+    }
+    if(this.javascript) {
+      filterTags.push(Tag.JAVASCRIPT);
+    }
+    if(this.react) {
+      filterTags.push(Tag.REACT);
     }
 
     this.projects = this.projectService.getProjectByFilter(filterTags);
