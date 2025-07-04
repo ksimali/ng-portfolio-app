@@ -14,6 +14,9 @@ export class Portfolio implements OnInit {
 
   projects = {} as Project[];
 
+  // a variable to keep track whether or Filter section is collapsed or not
+  isCollapsed: boolean = true; // isCollapse is true by default
+
   constructor(private titleService: Title, private projectService: ProjectService) {
     this.titleService.setTitle('Cassim Ali - Portfolio');
   }
