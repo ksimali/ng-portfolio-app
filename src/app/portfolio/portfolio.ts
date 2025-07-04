@@ -73,4 +73,20 @@ export class Portfolio implements OnInit {
 
     this.projects = this.projectService.getProjectByFilter(filterTags);
   }
+
+  /** resetFilter() function */
+  resetFilters() {
+    this.javascript = false;
+    this.typescript = false;
+    this.python = false;
+    this.java = false;
+    this.csharp = false;
+    this.angular = false;
+    this.aspnet = false;
+    this.nodejs = false;
+    this.aspnet = false;
+    this.react = false;
+    
+    this.projects = this.projectService.getProjects();
+  }
 }
