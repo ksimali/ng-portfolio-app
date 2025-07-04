@@ -17,8 +17,9 @@ export class Portfolio implements OnInit {
   // a variable to keep track whether or Filter section is collapsed or not
   isCollapsed: boolean = true; // isCollapse is true by default
 
-  //Define a boolean typescript set to false
+  //Define a typescript boolean  set to false
   typescript: boolean = false;
+  angular: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectService) {
     this.titleService.setTitle('Cassim Ali - Portfolio');
@@ -37,6 +38,9 @@ export class Portfolio implements OnInit {
 
     if(this.typescript) {
       filterTags.push(Tag.TYPESCRIPT);
+    }
+    if(this.angular) {
+      filterTags.push(Tag.ANGULAR);
     }
 
     this.projects = this.projectService.getProjectByFilter(filterTags);
