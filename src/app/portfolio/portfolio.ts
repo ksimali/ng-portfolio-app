@@ -17,6 +17,9 @@ export class Portfolio implements OnInit {
   // a variable to keep track whether or Filter section is collapsed or not
   isCollapsed: boolean = true; // isCollapse is true by default
 
+  // a variable filtering of boolean type to track if we're currently filtering or not
+  filtering: boolean = false;
+
   //Define a typescript boolean  set to false
   typescript: boolean = false;
   angular: boolean = false;
@@ -27,6 +30,7 @@ export class Portfolio implements OnInit {
   nodejs: boolean = false;
   aspnet: boolean = false;
   react: boolean = false;
+  
 
   constructor(private titleService: Title, private projectService: ProjectService) {
     this.titleService.setTitle('Cassim Ali - Portfolio');
@@ -71,6 +75,13 @@ export class Portfolio implements OnInit {
       filterTags.push(Tag.REACT);
     }
 
+    // return this.filtering = true, if any of or options filter is checked 
+    if(this.python || this.csharp ||this.java || this.angular || this.typescript || this.nodejs || this.aspnet || this.javascript || this.react) {
+      this.filtering = true;
+    }else {
+      this.filtering = false;
+    }
+
     this.projects = this.projectService.getProjectByFilter(filterTags);
   }
 
@@ -86,6 +97,7 @@ export class Portfolio implements OnInit {
     this.nodejs = false;
     this.aspnet = false;
     this.react = false;
+    this.filtering = false;
     
     this.projects = this.projectService.getProjects();
   }
