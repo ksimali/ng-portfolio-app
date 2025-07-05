@@ -5,7 +5,16 @@
     <!-- Interactive resume -->
     <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
-            <accordion-group heading="Work Experience">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div *ngIf="!isWorkExperienceOpen" style="color: white">></div>
+                    <div *ngIf="isWorkExperienceOpen"  style="color: white">v</div>
+                                    
+                </button>
+
                 <div style="text-align: left">
                     <aside>01/2025 - 02/2025</aside>
                     <h3 class="mb-0">Developpeur web stagiaire</h3>
@@ -53,7 +62,15 @@
                 </div>
             </accordion-group>
     
-            <accordion-group heading="Education">
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div *ngIf="!isEducationOpen" style="color: white">></div>
+                    <div *ngIf="isEducationOpen"  style="color: white">v</div>                    
+                </button>
+
                 <div style="text-align: left;">
                     <span>2023-2025</span>
                     <h3 class="mb-0">AEC Programmation web</h3>
@@ -75,7 +92,15 @@
                 </div>
             </accordion-group>
     
-            <accordion-group heading="Certification">
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certification</div>
+
+                    <div *ngIf="!isCertificationOpen" style="color: white">></div>
+                    <div *ngIf="isCertificationOpen"  style="color: white">v</div>                    
+                </button>
+
                 <div style="text-align: left">
                     <h3>Google analytics Certification</h3>
                     <ul>
@@ -85,7 +110,15 @@
                 <hr>
             </accordion-group>
     
-            <accordion-group heading="Skills">
+            <accordion-group [isOpen]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div *ngIf="!isSkillsOpen" style="color: white">></div>
+                    <div *ngIf="isSkillsOpen"  style="color: white">v</div>                    
+                </button>
+
                 <div class="row" style="text-align: left;">
                     <div class="col">
                         <h3>Languages:</h3>
