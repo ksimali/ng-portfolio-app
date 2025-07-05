@@ -16,6 +16,7 @@ import { ProjectModal } from './project-modal/project-modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     ModalModule,
     CarouselModule,
     CollapseModule,
-    FormsModule
+    FormsModule,
+    AccordionModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
