@@ -3,114 +3,122 @@
     <button (click)="download()" class="btn btn-primary mb-5 shadow border">Télécharger CV PDF</button>
 
     <!-- Interactive resume -->
-    <accordion>
-        <accordion-group heading="Work Experience">
-            <div style="text-align: left">
-                <aside>01/2025 - 02/2025</aside>
-                <h3 class="mb-0">Developpeur web stagiaire</h3>
-                <h4 class="text-primary">HitFilm - Montréal, Québec</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div style="text-align: left;">
-                <div>2020-2023</div>
-                <h3 class="mb-0">Facteur</h3>
-                <h4 class="text-primary">Groupe Adecco/La Poste - Paris 17è, France</h4>
-                <ul>
-                    <li>Organisation de la tournée en respectant un processus défini par la direction</li>
-                    <li>Collecte du courrier et des colis auprès des professionnels et des sociétés</li>
-                    <li>Ventes de produits postaux(timbres, enveloppes et colis préaffranchis)</li>
-                    <li>Tri du courrier et des colis rapportés selon la destination</li>
-                </ul>
-            </div>
-            <div style="text-align: left;">
-                <aside>2017-2019</aside>
-                <h3 class="mb-0">Manutentionnaire</h3>
-                <h4 class="text-primary">R.A.S Intérim/Chronopost - Strasbourg, France</h4>
-                <ul>
-                    <li>Chargement et Déchargement des colis</li>
-                    <li>Tris des colis selon les destinations</li>
-                    <li>Gestion des colis endommagés</li>
-                </ul>
-            </div>
-            <div style="text-align: left;">
-                <aside>2014-2016</aside>
-                <h3 class="mb-0">Enseignant en Economie et Gestion</h3>
-                <h4 class="text-primary">Lycee Y.Bamana - Mayotte, France</h4>
-                <ul>
-                    <li>Planification de séances de cours pour l'année en cours</li>
-                    <li>Réalisation des documents de travail en économie et gestion</li>
-                    <li>Animation et organisation des séances de cours</li>
-                    <li>Evaluation des connaissances acquises par les élèves</li>
-                </ul>
-            </div>
-        </accordion-group>
-
-        <accordion-group heading="Education">
-            <div style="text-align: left;">
-                <span>2023-2025</span>
-                <h3 class="mb-0">AEC Programmation web</h3>
-                <h4 class="text-primary">Cegep Gerald Godin</h4>
-                <ul>
-                    <li>Diplomé en Mars 2025</li>
-                    <li>technologie : Angular, java, javaEE</li>
-                </ul>
-            </div>
-            <div style="text-align: left;">
-                <span>2010</span>
-                <h3 class="mb-0">Licence Economie et Gestion,mention Economie</h3>
-                <h4 class="text-primary">Université de la Réunion - Saint-Denis, France</h4>
-                <small><i>(Equivalent à un Baccalauréat en Administration des Affaires)</i></small>
-                <ul>
-                    <li>Diplomé en Mars 2025</li>
-                </ul>
-            </div>
-        </accordion-group>
-
-        <accordion-group heading="Certification">
-            <div style="text-align: left">
-                <h3>Google analytics Certification</h3>
-                <ul>
-                    <li>Obtenue en 2020</li>
-                </ul>
-            </div>
-        </accordion-group>
-
-        <accordion-group heading="Skills">
-            <div class="row" style="text-align: left;">
-                <div class="col">
-                    <h3>Languages:</h3>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group heading="Work Experience">
+                <div style="text-align: left">
+                    <aside>01/2025 - 02/2025</aside>
+                    <h3 class="mb-0">Developpeur web stagiaire</h3>
+                    <h4 class="text-primary">HitFilm - Montréal, Québec</h4>
                     <ul>
-                        <li>Java/JavaEE</li>
-                        <li>TypeScript</li>
-                        <li>Python</li>
-                        <li>C#</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h3>Framework:</h3>
+                <hr>
+                <div style="text-align: left;">
+                    <div>2020-2023</div>
+                    <h3 class="mb-0">Facteur</h3>
+                    <h4 class="text-primary">Groupe Adecco/La Poste - Paris 17è, France</h4>
                     <ul>
-                        <li>Angular</li>
-                        <li>Node.JS</li>
-                        <li>Django</li>
-                        <li>Spring/Springboot</li>
+                        <li>Organisation de la tournée en respectant un processus défini par la direction</li>
+                        <li>Collecte du courrier et des colis auprès des professionnels et des sociétés</li>
+                        <li>Ventes de produits postaux(timbres, enveloppes et colis préaffranchis)</li>
+                        <li>Tri du courrier et des colis rapportés selon la destination</li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h3>Other Skills:</h3>
+                <hr>
+                <div style="text-align: left;">
+                    <aside>2017-2019</aside>
+                    <h3 class="mb-0">Manutentionnaire</h3>
+                    <h4 class="text-primary">R.A.S Intérim/Chronopost - Strasbourg, France</h4>
                     <ul>
-                        <li>Source Conrol via Git</li>
-                        <li>TDD</li>
-                        <li>System Design</li>
-                        <li>SCRUM</li>
+                        <li>Chargement et Déchargement des colis</li>
+                        <li>Tris des colis selon les destinations</li>
+                        <li>Gestion des colis endommagés</li>
                     </ul>
                 </div>
-            </div>
-        </accordion-group>
-    </accordion>
+                <hr>
+                <div style="text-align: left;">
+                    <aside>2014-2016</aside>
+                    <h3 class="mb-0">Enseignant en Economie et Gestion</h3>
+                    <h4 class="text-primary">Lycee Y.Bamana - Mayotte, France</h4>
+                    <ul>
+                        <li>Planification de séances de cours pour l'année en cours</li>
+                        <li>Réalisation des documents de travail en économie et gestion</li>
+                        <li>Animation et organisation des séances de cours</li>
+                        <li>Evaluation des connaissances acquises par les élèves</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group heading="Education">
+                <div style="text-align: left;">
+                    <span>2023-2025</span>
+                    <h3 class="mb-0">AEC Programmation web</h3>
+                    <h4 class="text-primary">Cegep Gerald Godin</h4>
+                    <ul>
+                        <li>Diplomé en Mars 2025</li>
+                        <li>technologie : Angular, java, javaEE</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <span>2010</span>
+                    <h3 class="mb-0">Licence Economie et Gestion,mention Economie</h3>
+                    <h4 class="text-primary">Université de la Réunion - Saint-Denis, France</h4>
+                    <small><i>(Equivalent à un Baccalauréat en Administration des Affaires)</i></small>
+                    <ul>
+                        <li>Diplomé en Mars 2025</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group heading="Certification">
+                <div style="text-align: left">
+                    <h3>Google analytics Certification</h3>
+                    <ul>
+                        <li>Obtenue en 2020</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+    
+            <accordion-group heading="Skills">
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Languages:</h3>
+                        <ul>
+                            <li>Java/JavaEE</li>
+                            <li>TypeScript</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Framework:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Node.JS</li>
+                            <li>Django</li>
+                            <li>Spring/Springboot</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Source Conrol via Git</li>
+                            <li>TDD</li>
+                            <li>System Design</li>
+                            <li>SCRUM</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+
 </div>
 
 
