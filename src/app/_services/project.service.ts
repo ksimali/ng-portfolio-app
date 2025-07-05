@@ -32,4 +32,27 @@ export class ProjectService {
 
     return project;
   }
+
+  /** */
+  getProjectByFilter(filterTags: Tag[]) {
+    //Define a var, a array of projects
+    let filteredProjects: Project[] = [];
+
+    //Loop over our projet to find the one who match our filters
+    this.projects.forEach(function (project) {
+      let foundAll = true; // declare a boolean equal to true
+      //Loop on our filter tags
+      filterTags.forEach(function(filterTag) {
+        if(project.tags.includes(filterTag) == false) {
+          foundAll = false;
+        }
+      });
+
+      if(foundAll) {
+        filteredProjects.push(project);
+      }
+    });
+
+    return filteredProjects;
+  }
 }
