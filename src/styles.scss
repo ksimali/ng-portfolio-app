@@ -1,14 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset simple */
 html, body {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #212529; /* texte noir-gris Bootstrap */
 }
 
+/* Conteneur fixe comme Bootstrap */
 .container {
     max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;  /* Pour éviter que le contenu colle au bord */
+    padding-right: 15px;
 }
+
 .tag {
     padding: 0 20px;
     height: 30px;
