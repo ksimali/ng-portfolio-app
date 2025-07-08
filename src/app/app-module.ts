@@ -38,7 +38,8 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     CarouselModule,
     CollapseModule,
     FormsModule,
-    AccordionModule
+    AccordionModule,
+    CollapseModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

@@ -1,18 +1,26 @@
-<nav class="navbar-expand-md border-bottom mb-3">
+<nav class="navbar navbar-expand-md navbar-light border-bottom shadow-sm mb-3">
     <div class="container">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/resume" routerLinkActive="text-dark">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
-            </li>
-        </ul>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu-->
+        <div [collapse]="isCollapsed" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="text-dark">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/resume" routerLinkActive="text-dark">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
