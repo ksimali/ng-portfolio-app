@@ -1,7 +1,13 @@
-<div class="shadow-sm">
-    <app-header></app-header>
-    <app-navbar></app-navbar>
+<div class="d-flex flex-column min-vh-100">
+    <div class="shadow-sm">
+        <app-header></app-header>
+        <app-navbar></app-navbar>
+    </div>
+    <main class="flex-fill mx-auto my-5 w-100">
+        <router-outlet></router-outlet>
+    </main>
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        <app-footer></app-footer>
+    </footer>
 </div>
-<main>
-    <router-outlet></router-outlet>
-</main>
+
