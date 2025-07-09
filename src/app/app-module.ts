@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { Footer } from './footer/footer';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     Resume,
     Contact,
     ProjectCard,
-    ProjectModal
+    ProjectModal,
+    Footer
   ],
   imports: [
     BrowserAnimationsModule,
