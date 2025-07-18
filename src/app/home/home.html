@@ -1,32 +1,36 @@
 <div class="container">
     <div class="row">
         <!--About me-->
-        <div class="col-lg shadow border m-1 p-3">
+        <div class="col-lg shadow border m-4 p-3 w-75 mx-auto">
             <div class="text-center">
-                <h2>About me</h2>
-                <img src="assets/default_profile_picture.jpeg" alt="profile picture" width="256" height="256" class="rounded-circle">
-                <p class="mt-3">
-                    Développeur JavaScript junior Node.js/Angular.
-                    Je conçois des applications web modernes intégrant frontend, backend,
-                    API REST, bases de données (MongoDB/PostgreSQL) et sécurisation (JWT).
-                    Je cherche un premier poste junior pour contribuer à des projets concrets et
-                    progresser dans les technologies web. 
-                    En parallèle, je développe mes compétences sur Java (Spring Boot), Python (Django).
-
+                <h2>À propos de moi</h2>
+                <img src="assets/default_profile_picture.jpeg" alt="Photo de profil" width="256" height="256" class="rounded-circle shadow-sm">
+                <p class="mt-3 px-3 fw-bold">
+                    Développeur Java / Angular junior passionné par la création d'applications web performantes et sécurisées.
+                </p>
+                <p class="px-3">
+                    Je maîtrise le développement fullstack avec Angular (frontend) et Java Spring Boot (backend),
+                    en intégrant des API REST, des bases de données relationnelles et NoSQL (MySQL, MongoDB), ainsi que la sécurisation via JWT.
+                </p>
+                <p class="px-3">
+                    Je recherche un premier poste stimulant pour contribuer à des projets concrets, apprendre en équipe et approfondir mes compétences dans l'écosystème Java/Angular.
+                </p>
+                <p class="px-3">
+                    En parallèle, je continue à me former sur des technologies complémentaires comme Python/Django, afin de devenir un développeur polyvalent et adaptable.
                 </p>
             </div>            
         </div>
         <!--Featured project-->
-        <div class="col-lg shadow border m-1 p-3">
-            <div class="text-center">
+        <div class="col-lg shadow border m-4 p-3 w-75 mx-auto">
+            <div class="text-center mb-3">
                 <h2>Featured project</h2>
-                <h4>{{featuredProject.name}}</h4>
+                <h4 class="text-primary fw-semibold">{{featuredProject.name}}</h4>
             </div>
 
             <carousel>
-                <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src={{picture}} alt="slide" style="display: block; width:100%"></slide>
-                </div>  
+                <slide *ngFor="let picture of featuredProject.pictures">
+                    <img src={{picture}} alt="slide" style="display: block; width:100%">
+                </slide> 
             </carousel>
 
             <p class="mt-2">{{featuredProject.summary}}</p>
