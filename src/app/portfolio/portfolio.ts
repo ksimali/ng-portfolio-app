@@ -30,6 +30,9 @@ export class Portfolio implements OnInit {
   nodejs: boolean = false;
   aspnet: boolean = false;
   react: boolean = false;
+  springboot: boolean = false;
+  django: boolean = false;
+  expressjs: boolean = false;
   
 
   constructor(private titleService: Title, private projectService: ProjectService) {
@@ -74,9 +77,18 @@ export class Portfolio implements OnInit {
     if(this.react) {
       filterTags.push(Tag.REACT);
     }
+    if(this.springboot) {
+      filterTags.push(Tag.SPRINGBOOT);
+    }
+    if(this.django) {
+      filterTags.push(Tag.DJANGO);
+    }
+    if(this.expressjs) {
+      filterTags.push(Tag.EXPRESSJS);
+    }
 
     // return this.filtering = true, if any of or options filter is checked 
-    if(this.python || this.csharp ||this.java || this.angular || this.typescript || this.nodejs || this.aspnet || this.javascript || this.react) {
+    if(this.python || this.csharp ||this.java ||this.springboot||this.django|| this.angular || this.typescript || this.nodejs ||this.expressjs|| this.aspnet || this.javascript || this.react) {
       this.filtering = true;
     }else {
       this.filtering = false;
@@ -97,6 +109,9 @@ export class Portfolio implements OnInit {
     this.nodejs = false;
     this.aspnet = false;
     this.react = false;
+    this.springboot = false;
+    this.django = false;
+    this.expressjs = false;
     this.filtering = false;
     
     this.projects = this.projectService.getProjects();
