@@ -12,6 +12,9 @@ export class Tag {
     static readonly SPRINGBOOT = new Tag('Springboot', '#6db33f');
     static readonly DJANGO = new Tag('Django', 'green');
     static readonly EXPRESSJS = new Tag('Expressjs', '#303030');
+    static readonly MYSQL = new Tag('MySQL','#FFA500');
+    static readonly MONGODB = new Tag('MongoDB','#00684A');
+    static readonly BOOTSTRAP = new Tag('Bootstrap', '#6f42c1');
 
     //constructor
     private constructor(private readonly key: string, public readonly color: string) {
