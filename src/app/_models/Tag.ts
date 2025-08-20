@@ -9,6 +9,9 @@ export class Tag {
     static readonly ASPNET = new Tag('ASP.NET', 'purple');
     static readonly JAVASCRIPT = new Tag('Javascript', 'gold');
     static readonly REACT = new Tag('React', 'blue');
+    static readonly SPRINGBOOT = new Tag('Springboot', '#6db33f');
+    static readonly DJANGO = new Tag('Django', 'green');
+    static readonly EXPRESSJS = new Tag('Expressjs', '#303030');
 
     //constructor
     private constructor(private readonly key: string, public readonly color: string) {
